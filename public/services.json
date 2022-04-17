@@ -1,0 +1,35 @@
+[
+    {
+        "id": "6249f0107fe277592e253a20",
+        "img": "https://i.ibb.co/82LynPh/image-pricing-03.jpg",
+        "price": 49,
+        "name": "Model Photography",
+        "cameraType": "Professional",
+        "_package": "50 ",
+        "processing": "Retouch",
+        "resolution": "48 MP",
+        "term": "14 Days"
+    },
+    {
+        "id": "6249f0108df8e55bca492421",
+        "img": "https://i.ibb.co/82LynPh/image-pricing-03.jpg",
+        "price": 25,
+        "name": "Corporate Photography",
+        "cameraType": "Professional",
+        "_package": "500",
+        "processing": "Correction, Retouch",
+        "resolution": "12 MP",
+        "term": "14-21 Days"
+    },
+    {
+        "id": "6249f01059e348dcf491abfa",
+        "img": "https://i.ibb.co/82LynPh/image-pricing-03.jpg",
+        "price": 39,
+        "name": "Potrait Photography",
+        "cameraType": "Semi-Professional",
+        "_package": "150",
+        "processing": "Correction",
+        "resolution": "32 MP",
+        "term": "30 Days"
+    }
+]
