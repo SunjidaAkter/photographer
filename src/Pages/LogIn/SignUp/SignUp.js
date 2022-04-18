@@ -58,7 +58,7 @@ const SignUp = () => {
                     </Form.Group>
                     <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
 
-                    <label className={`accept mb-3 mt-1 ps-2 ${agree ? '' : 'text-danger'}`} htmlFor="terms">Accept Genius Car Terms and Conditions</label>
+                    <label className={`accept mb-3 mt-1 ps-2 ${agree ? '' : 'text-danger'}`} htmlFor="terms">Accept INSHOT Terms and Conditions</label>
 
                     <div className='d-flex '>
                         <Button disabled={!agree} className='d-block w-100 mx-auto' variant="dark" type="submit">
