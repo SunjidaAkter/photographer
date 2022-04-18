@@ -1,8 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Service.css'
 
 const Service = ({ service }) => {
-    const { name, img, price, cameraType, term, resolution, processing, _package } = service;
+    const { id, name, img, price, cameraType, term, resolution, processing, _package } = service;
+    const navigate = useNavigate();
+
+    const navigateToCkeckOut = id => {
+        navigate(`/service/${id}`);
+    }
     return (
         <div className='container photo-frame'>
             <div className="photo"><img src={img} alt="" /></div>
@@ -20,7 +26,7 @@ const Service = ({ service }) => {
                 <p className='ms-4 mb-3'>{term}</p>
                 <div className='d-flex justify-content-between'>
                     <h2 className='ms-4'>${price}</h2>
-                    <button className='butn me-2'>Check Out</button>
+                    <button onClick={() => navigateToCkeckOut(id)} className='butn me-2'>Check Out</button>
                 </div>
             </div>
         </div>

@@ -6,8 +6,8 @@ import './Services.css'
 const Services = () => {
     const [services, setServices] = useServices();
     return (
-        <div>
-            <h1 className=''>Pricing</h1>
+        <div >
+            <h1 id='services' className=''>Pricing</h1>
             <div className='container services-container'>
                 {
                     services.map(service => <Service
