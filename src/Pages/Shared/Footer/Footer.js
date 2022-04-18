@@ -13,7 +13,7 @@ const Footer = () => {
             <div className='d-flex justify-content-center align-items-center'>
                 <h6 className='my-3 me-3'>Follow me on </h6>
                 <a
-                    href="https://www.facebook.com/DeveloperShahadatHossain/"
+                    href="https://www.facebook.com/"
                     target="blank"
                 >
                     <img
@@ -25,7 +25,7 @@ const Footer = () => {
                 </a>
 
 
-                <a href="https://twitter.com/wd_shahadat" target="blank">
+                <a href="https://twitter.com/" target="blank">
                     <img
                         className="me-2"
                         style={{ width: "30px" }}
@@ -35,7 +35,7 @@ const Footer = () => {
                 </a>
 
                 <a
-                    href="https://www.instagram.com/developershahadat/"
+                    href="https://www.instagram.com/"
                     target="blank"
                 >
                     <img

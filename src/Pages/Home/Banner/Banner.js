@@ -8,7 +8,7 @@ import './Banner.css'
 
 const Banner = () => {
     return (
-        <div className='container'>
+        <div className='container '>
             <Carousel fade>
                 <Carousel.Item className='caro'>
                     <img
@@ -19,7 +19,8 @@ const Banner = () => {
                     />
                     <Carousel.Caption>
                         <h1 className='mt-5 head'>RIDDLE</h1>
-                        <h3 className='mb-5 para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <h3 className='mb-5 para'>Only photograph
+                            what you love</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className='caro'>
@@ -32,7 +33,8 @@ const Banner = () => {
 
                     <Carousel.Caption>
                         <h1 className='mt-5 head'>THE PLANT</h1>
-                        <h3 className='mb-5 para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <h3 className='mb-5 para'>Only photograph
+                            what you love</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className='caro'>
@@ -45,7 +47,8 @@ const Banner = () => {
 
                     <Carousel.Caption>
                         <h1 className='head' >WILD ROAD</h1>
-                        <h3 className='mb-5 para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <h3 className='mb-5 para'>Only photograph
+                            what you love</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

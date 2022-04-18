@@ -4,6 +4,7 @@ import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-fireb
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const SignUp = () => {
     const [agree, setAgree] = useState(false);
@@ -40,17 +41,15 @@ const SignUp = () => {
         navigate('/');
     }
     return (
-        <div className='container my-5'>
+        <div className='container my-5 caro'>
             <div className='w-50 mx-auto my-5'>
+                <h1 className='text-center'>SIGN UP</h1>
                 <Form onSubmit={handleSignUp}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Name</Form.Label>
-                        <Form.Control type="text" name="name" placeholder="Enter name" required />
-                        <Form.Label>Email Address</Form.Label>
-                        <Form.Control type="email" name="email" placeholder="Enter email" required />
-                        <Form.Text className="text-muted">
-                            We'll never share your email with anyone else.
-                        </Form.Text>
+                        <Form.Label className='mt-2'>Name</Form.Label>
+                        <Form.Control className='mb-2' type="text" name="name" placeholder="Enter name" required />
+                        <Form.Label className='mt-2'>Email Address</Form.Label>
+                        <Form.Control className='mb-2' type="email" name="email" placeholder="Enter email" required />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -59,16 +58,17 @@ const SignUp = () => {
                     </Form.Group>
                     <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
 
-                    <label className={`ps-2 ${agree ? '' : 'text-danger'}`} htmlFor="terms">Accept Genius Car Terms and Conditions</label>
+                    <label className={`accept mb-3 mt-1 ps-2 ${agree ? '' : 'text-danger'}`} htmlFor="terms">Accept Genius Car Terms and Conditions</label>
 
                     <div className='d-flex '>
-                        <Button disabled={!agree} className='d-block w-25 mx-auto' variant="dark" type="submit">
+                        <Button disabled={!agree} className='d-block w-100 mx-auto' variant="dark" type="submit">
                             Sign Up
                         </Button>
                     </div>
                 </Form>
-                <p>Already have an account? <Link to="/logIn" className='text-primary pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link> </p>
+                <p className='my-3'>Already have an account? <Link to="/logIn" className='text-primary pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link> </p>
             </div>
+            <SocialLogin></SocialLogin>
         </div>
 
     );

@@ -6,6 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import 'react-toastify/dist/ReactToastify.css';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const LogIn = () => {
     const navigate = useNavigate();
@@ -22,7 +23,7 @@ const LogIn = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
-    const [sendPasswordResetEmail, sending, error2] = useSendPasswordResetEmail(auth);
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
     if (loading || sending) {
         return <Loading></Loading>
@@ -33,8 +34,8 @@ const LogIn = () => {
 
     }
 
-    if (error || error2) {
-        errorElement = <p className='text-danger'>Error: {error?.message}{error2?.message}</p>
+    if (error) {
+        errorElement = <p className='text-danger'>Error: {error?.message}</p>
     }
 
     const handleSubmit = event => {
@@ -63,15 +64,13 @@ const LogIn = () => {
     }
 
     return (
-        <div className='container my-5 '>
+        <div className='container my-5 caro'>
             <div className='w-50 mx-auto my-5'>
+                <h1 className='text-center'>LOG IN</h1>
                 <Form onSubmit={handleSubmit}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control ref={emailRef} type="email" name="email" placeholder="Enter email" required />
-                        <Form.Text className="text-muted">
-                            We'll never share your email with anyone else.
-                        </Form.Text>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -79,16 +78,17 @@ const LogIn = () => {
                         <Form.Control ref={passwordRef} type="password" name="password" placeholder="Password" required />
                     </Form.Group>
                     <div className='d-flex '>
-                        <Button className='d-block w-25 mx-auto' variant='dark' type="submit">
+                        <Button className='d-block w-100 mx-auto' variant='dark' type="submit">
                             Log In
                         </Button>
                     </div>
                 </Form>
                 {errorElement}
-                <p>New to Genius Car? <Link to="/signUp" className='text-primary pe-auto text-decoration-none' onClick={navigateSignUp}>Please Register</Link> </p>
+                <p className='my-3'>New to INSHOT? <Link to="/signUp" className='text-primary pe-auto text-decoration-none' onClick={navigateSignUp}>Please Sign Up</Link> </p>
                 <p>Forget Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
-                <ToastContainer />
             </div>
+            <SocialLogin></SocialLogin>
+            <ToastContainer />
         </div>
     );
 };
