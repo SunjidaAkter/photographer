@@ -29,7 +29,7 @@ const SocialLogin = () => {
             <div className='container w-50'>
                 <div className='d-flex align-items-center'>
                     <div style={{ height: '1px', backgroundColor: '#404040' }} className=' w-50'></div>
-                    <p className='mt-2 px-2'>or</p>
+                    <p className='mt-2 px-2'>OR</p>
                     <div style={{ height: '1px', backgroundColor: '#404040' }} className='w-50'></div>
                 </div>
                 <div className=''>
