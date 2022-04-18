@@ -21,18 +21,17 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link className='text-dark' as={Link} to='/'>Home</Nav.Link>
-                        <Nav.Link className='text-dark' as={Link} to='/home#services'>Services</Nav.Link>
-                        <Nav.Link className='text-dark' as={Link} to='/'>Pricing</Nav.Link>
+                        <Nav.Link className='text-dark link' as={Link} to='/'>Home</Nav.Link>
+                        <Nav.Link className='text-dark link' as={Link} to='/blogs'>Blogs</Nav.Link>
+                        <Nav.Link className='text-dark link' as={Link} to='/about'>About</Nav.Link>
 
                     </Nav>
                     <Nav>
-                        <Nav.Link className='text-dark' as={Link} to='/about'>About</Nav.Link>
                         {
                             user ?
                                 <button className='btn btn-link text-dark text-decoration-none' onClick={handleSignOut}>sign out</button>
                                 :
-                                <Nav.Link as={Link} to="logIn">
+                                <Nav.Link className='text-dark link' as={Link} to="logIn">
                                     Login
                                 </Nav.Link>}
                     </Nav>

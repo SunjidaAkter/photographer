@@ -1,0 +1,24 @@
+.caro {
+    border-bottom: 0px solid #404040;
+    border-left: 25px solid #404040;
+    border-right: 25px solid #404040;
+    border-top: 0px solid #404040;
+}
+
+.head {
+    font-size: 48px;
+}
+
+.para {
+    font-size: 30px;
+}
+
+@media only screen and (max-width:688px) {
+    .head {
+        font-size: 30px;
+    }
+
+    .para {
+        font-size: 20px;
+    }
+}

@@ -7,7 +7,7 @@ const Services = () => {
     const [services, setServices] = useServices();
     return (
         <div >
-            <h1 id='services' className=''>Pricing</h1>
+            <h1 id='services' className='text-center mb-1 mt-5'>Services & Pricing</h1>
             <div className='container services-container'>
                 {
                     services.map(service => <Service
