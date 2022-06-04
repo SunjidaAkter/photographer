@@ -1,0 +1,15 @@
+.form {
+    width: 25%;
+    height: 80px;
+    border-radius: 0%;
+    border: 1px solid black;
+    font-size: 15px;
+}
+
+.b-button {
+    border-radius: 0%;
+    border: 1px solid black;
+    font-weight: 500;
+    margin-left: 12px;
+    margin-right: 12px;
+}

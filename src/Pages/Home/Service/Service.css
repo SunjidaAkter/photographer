@@ -18,7 +18,7 @@
     height: 100%;
     top: 0;
     position: absolute;
-    color: rgba(255, 255, 255, 0.541);
+    color: rgba(255, 255, 255, 0);
     display: flex;
     flex-direction: column;
 }
@@ -27,6 +27,13 @@
     background-color: rgba(0, 0, 0, 0);
     color: rgba(255, 255, 255, 0.541);
     border: none;
+    font-size: 30px;
+}
+
+.headline {
+    font-size: 50px;
+    font-weight: 500;
+
 }
 
 .photo-frame:hover .butn {

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Bangers&family=Bebas+Neue&family=Courgette&family=Inter:wght@400;700&family=Joan&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@700&family=Poppins:wght@500;600;700&family=Satisfy&display=swap');
+
+/* font-family: 'Balsamiq Sans', cursive;
+font-family: 'Bangers', cursive;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Joan', serif;
+font-family: 'Lobster', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Manrope', sans-serif;
+font-family: 'Lobster Two', cursive;
+font-family: 'Poppins', sans-serif; */
+.my-heading {
+    font-size: 60px;
+    font-family: 'Lobster Two', cursive;
+    font-weight: 700;
+    position: relative;
+}
+
+.services-heading {
+    font-size: 60px;
+
+    font-weight: 600;
+
+}
+
+.p-w {
+    width: 30%;
+}
+
+.my-para {
+    font-family: 'Satisfy', cursive;
+    font-size: 24px;
+    width: 70%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.678);
+}
+
+.font-satisfy {
+    font-family: 'Satisfy', cursive;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.my-heading::after {
+    background-color: #0832429d;
+    bottom: 0;
+    content: '';
+    height: 40%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}

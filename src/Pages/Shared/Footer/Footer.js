@@ -8,44 +8,62 @@ import instagramIcon from "../../../icons/instagramIcon.png";
 const Footer = () => {
     return (
 
-        <div className='pt-3 contaner bg mb-0 bg-dark'>
-            <h6 className='text-center mt-3 mb-0'>Copyright &copy; 2022 INSHOT.</h6>;
-            <h6 className='text-center mt-2 mb-0 pb-2'> All rights reserved.</h6>
-            <div className='d-flex justify-content-center align-items-center'>
-                <h6 className='my-3 me-3'>Follow me on </h6>
-                <a
-                    href="https://www.facebook.com/"
-                    target="blank"
-                >
-                    <img
-                        className="me-2"
-                        style={{ width: "30px" }}
-                        src={facebookIcon}
-                        alt=""
-                    />
-                </a>
+        <div className='bg'>
+            <div className='container pt-5'>
+                <div className='d-flex justify-content-between flex-wrap'>
+                    <div>
+                        <h3>OFFICE</h3>
+                        <p className='mt-4 mb-5 p'>756 Livingston Street, <br /> Brooklyn, NY 11201</p>
+                    </div>
+                    <div>
+                        <h3>GET IN TOUCH</h3>
+                        <p className='mt-4 mb-5 p'>E.: work@e.oliver.com<br />T.: +1 (00) 123-45-67</p>
+                    </div>
+                    <div>
+                        <h3>SOCIAL</h3>
+                        <p className='mt-4 mb-5 p'>Connect with me on <br />
+                            <a
+                                href="https://www.facebook.com/"
+                                target="blank"
+                            >
+                                <img
+                                    className="me-2"
+                                    style={{ width: "30px" }}
+                                    src={facebookIcon}
+                                    alt=""
+                                />
+                            </a>
 
 
-                <a href="https://twitter.com/" target="blank">
-                    <img
-                        className="me-2"
-                        style={{ width: "30px" }}
-                        src={twitterIcon}
-                        alt=""
-                    />
-                </a>
+                            <a href="https://twitter.com/" target="blank">
+                                <img
+                                    className="me-2"
+                                    style={{ width: "30px" }}
+                                    src={twitterIcon}
+                                    alt=""
+                                />
+                            </a>
 
-                <a
-                    href="https://www.instagram.com/"
-                    target="blank"
-                >
-                    <img
-                        className="me-2"
-                        style={{ width: "30px" }}
-                        src={instagramIcon}
-                        alt=""
-                    />
-                </a>
+                            <a
+                                href="https://www.instagram.com/"
+                                target="blank"
+                            >
+                                <img
+                                    className="me-2"
+                                    style={{ width: "30px" }}
+                                    src={instagramIcon}
+                                    alt=""
+                                />
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div className='pt-3 contaner bg mb-0 '>
+                <p className='text-center  pb-3 mb-0 line p'>Copyright &copy; 2022 INSHOT.<br />
+                    All rights reserved.</p>
+
             </div>
         </div>
     );
